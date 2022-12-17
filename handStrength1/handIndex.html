@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+       
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <title>Test Your Hand Strength</title>
+        <meta name="desciption" content="poker hand strength rater">
+        <meta name="author" content="Daniel Rice">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .responsive {
+                width: 100%;
+                height: auto;
+                }
+        </style>
+    </head>
+    <body>
+        <script defer type="text/javascript" src="index.js"></script>
+        <h1 class="header" id="title">Test Your Hand Strength</h1>
+        <p id="siteDescription">Hello! Welcome to the Hand Strength Test!
+            This site will show you how to rate your opening hand in Texas Hold 'Em based on the Chen Formula.
+            For more information go to: <a id="hyperLink" style="color:blue;" href="https://www.thepokerbank.com/strategy/basic/starting-hand-selection/chen-formula/">https://www.thepokerbank.com/strategy/basic/starting-hand-selection/chen-formula/</a>
+        </p>
+        <div id="playerHands" class="div">
+        <button id="populateBtn" >Populate Hands</button>
+        
+        <p>Player 1</p>
+        <div id="player1Hand" class="div">
+            <ul id="player1List">
+                
+            </ul>
+            <p id="p1HandScoreContainer" class="p"></p>
+        </div>
+        <p>Player 2</p>
+        <div id="player2Hand" class="div">
+            <ul id="player2List">
+                
+            </ul>
+            <p id="p2HandScoreContainer" class="p"></p>
+        </div>
+        <p>Player 3</p>
+        <div id="player3Hand" class="div">
+            <ul id="player3List">
+                
+            </ul>
+            <p id="p3HandScoreContainer" class="p"></p>
+        </div>
+        </div>
+        <div id="notesDiv" class="div">
+        <p>Take notes here!</p>
+        <form id="notesForm">
+            <label for="notes">notes:</label><br>
+            <input type="text" id="notes" name="notes" value="your notes here"><br>
+        </form>
+        <ul id="noteContainer">
+
+        </ul>
+        </div>
+    </body>
+</html>
