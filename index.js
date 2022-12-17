@@ -29,8 +29,10 @@ function drawCards() {
     for (i = 0; i <= data.cards.length-1; i++) {
         let newImg = document.createElement("img")
         newImg.src=`${data.cards[i].image}`
+        newImg.className= "responsive"
         if (i < 2) {
             console.log(`${data.cards[i].image}`)
+            console.log(newImg.class)
             document.getElementById("player1List").appendChild(newImg)
         } else if (i < 4) {
             console.log(`${data.cards[i].image}`)
